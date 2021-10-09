@@ -1,0 +1,66 @@
+1 . Crear una lista vacía. Luego llenarla con elementos cargados por pantalla. La carga finaliza 
+cuando se ingrese la palabra “Fin”. Mostrar la cantidad de elementos ingresados y la lista 
+completa.
+
+frutas = []
+print(frutas)
+date = input(“ingrese una fruta (para salir, ingrese la palabra Fin): " )
+while date !="Fin":
+ frutas.append(date)
+ date = input("ingrese una fruta (para salir, ingrese la palabra Fin): ")
+print(len(date))
+print(frutas) 
+
+2. Se ingresa 10 números por teclado en una lista. Mostrar el valor máximo y el mínimo 
+ingresado. 
+
+
+lista = []
+print(lista)
+for x in range(10):
+ dato = int(input(f'Ingrese el numero {x+1}: '))
+ lista.append(dato)
+print(lista)
+valormax = max(lista)
+print("El numero mayor es: ", valormax) 
+valormin = min(lista)
+print("El numero menor es: ", valormin)
+
+3. Se colocan los nombres de las personas que van llegando a una oficina. Se finaliza con la 
+carga cuando se ingresa la palabra “fin”. Mostrar la lista ordenada ascendentemente y luego 
+descendentemente.
+
+
+personal = []
+print(personal)
+date = input("Nombre de quien llego a la oficina (para salir, ingrese la palabra Fin): " )
+while date !="Fin":
+ personal.append(date)
+ date = input("Nombre de quien llego a la oficina (para salir, ingrese la palabra Fin): " )
+personal.sort()
+print("\nLista ordenada ascendentemente")
+print(personal)
+personal.sort(reverse=True)
+print("\nLista ordenada descendentemente")
+print(personal)
+
+
+4. Ingresar en una variable el o los nombres de una persona, en o tra variable, el o los
+apellidos. Luego crear una nueva variable, para concatenar los datos ingresados, como se 
+muestra en el s iguiente formato: Apellidos,Nombres 
+Mostrar la cadena de texto que contiene al apellido y el nombre. Tener cuidado con el 
+espacio de separación de las palabras.
+Convertir esta cadena de texto en una lista y volver a mostrarla.
+Mostrar el valor máximo y el mínimo del contenido de la lista.
+
+
+Nombres = input("Ingrese nombre/s: ")
+Apellidos = input("Ingrese apellido/s: ")
+todojunto = Apellidos + ', ' + Nombres
+print(todojunto)
+conversion = list(todojunto)
+print(conversion)
+valormax= max(conversion)
+valormin= min(conversion)
+print("La letra mayor de la lista es : ", valormax)
+print("La letra menor de la lista es : ", valormin)
