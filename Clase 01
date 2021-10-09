@@ -1,0 +1,54 @@
+
+1)Crear un programa en Python, que muestre los números del 1 al 5.
+
+print(1,2,3,4,5)
+
+
+2)Crear un programa que muestre una letra 10 veces en un renglón.
+
+print("G G G G G G G G G G")
+
+3)Crear un programa que muestre una letra en cada renglón, se repite 5 veces.
+
+print("M")
+print("M")
+print("M")
+print("M")
+print("M")
+print("M")
+
+
+4)Mostrar un triángulo formado por una letra.
+
+
+print("I")
+print("II")
+print("III")
+print("IIII")
+print("IIIII")
+print("IIIIII")
+
+
+5)Ingresar por pantalla (utilizando INPUT), 3 números y mostrar la suma de los mismos.
+
+print("Suma de 3 variables")
+a = int(input("Ingrese un numero: "))
+b = int(input("Ingrese un segundo numero: "))
+c = int(input("Ingrese un tercer numero: "))
+sumar = a + b + c
+print("La suma de los numeros dados es: ", sumar) 
+
+
+
+
+
+
+
+
+6)Ingresar por pantalla 2 números y mostrar el producto (multiplicación).
+
+a = int(input("Ingrese un numero: "))
+b = int(input("Ingrese un segundo numero: "))
+multi = a * b
+print("La multiplicacion de los numeros dados es: ", multi)
+
