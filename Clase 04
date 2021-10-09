@@ -1,0 +1,61 @@
+1 . Mostrar l os números del 1 al 100 utilizando la estructura “for”.
+
+print("Arranca el for")
+for c in range(1, 101):
+ print(c, end=" ") 
+ 
+2. Mostrar los números del 1 al 100 utilizando la estructura “while”
+
+x = 1
+print("arranca el while")
+while x <= 100:
+ print(x, end=" - ")
+x = x + 1 
+
+3. Ingresar n úmeros por pantalla, utilizando la estructura while, y mostrar la cantidad de 
+números positivos ingresados. El programa finaliza cuando se ingrese un 0 ó un número 
+negativo.
+
+suma, contador = 0, 0
+num = int(input("Ingrese numeros(para salir ingrese 0 o un numero negativo) : "))
+while num > 0:
+ suma += num #No se solicita la suma de los números ingresados.
+ contador += 1
+ num = int(input("Ingrese numeros(para salir ingrese 0 o un numero negativo) : "))
+print("los numeros positivos son", contador)
+
+4. Utilizando una lista de 20 números enteros que no se repiten, ingresar por pantalla un 
+número e indicar si el mismo se encuentra o no dentro de los valores de la lista. Si se 
+encuentra, indicar en que posición fue hallado.
+
+valores = [1, 20, 30, 40, 12, 5, 2, 100, 10, 15, 11, 19, 23, 44, 19, 42, 66, 87, 99, 32]
+encontrado = False
+indice = 0
+longitud = len(valores)
+num = int(input("Ingrese numero: "))
+while indice < longitud:
+ valor = valores[indice]
+ if valor == num:
+ encontrado = True
+ break
+ else:
+ indice +=1
+if encontrado:
+ print("El numero ingresado ha sido encontrado en la posicion:", indice)
+else:
+print("El numero ingresado no esta en la Lista de 20 numeros!")
+
+
+5. Entre todos los números del intervalo de 1 a 100, se pide contar y c alcular la suma los 
+números que son múltiplos de 4 (para saber si un número es múltiplo se puede utilizar la 
+operación: numero % 4). Mostrar la cantidad y la suma obtenida.
+
+
+x, cont, suma = 1, 0, 0
+while x <= 100:
+ if x % 4 == 0:
+ cont+=1
+ suma+=x
+ x=x+1
+print("\nDel intervalo de 1 a 100: ",cont," Son múltiplos de 4 y la suma de los mismos 
+es: " ,suma)
