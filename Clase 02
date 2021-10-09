@@ -1,0 +1,84 @@
+1) Ingresar un número y mostrar  el cuadrado el mismo. Por ejemplo, si se ingresa 5 , mostrar el resultado de 52, que es  25.
+
+num = int(input("Ingrese numero para ver el resultado al cuadrado: "))
+resultado = num ** 3
+print("El resultado es: ", resultado)
+
+
+
+2)Ingresar la edad de una persona, e indicar si es “mayor de edad”. En caso de NO cumplirse  la condición, no mostrar ningún mensaje.
+
+
+age = int(input("Ingrese su edad: "))
+if age > 18:
+	print("es mayor de edad")
+
+print("fin del programa")
+
+
+3)Completar el ejercicio anterior, mostrando el mensaje “es menor de edad”.
+
+ age = int(input("Ingrese su edad: "))
+ if age > 18:
+ 	print("es mayor de edad")
+ else:
+ 	print("es menor de edad")
+
+4)Ingresar dos números y mostrar el MAYOR, de los números ingresados.
+
+num = int(input("Ingrese un numero: "))
+num2 = int(input("Ingrese otro numero: "))
+
+if num > num2:
+	print("el numero mayor es", num)
+else:
+ 	print("el numero mayor es", num2)
+print("fin del programa")
+
+5 ) Ingresar dos números. Si ambos son IGUALES, indicarlo a través de  un mensaje (o cartel).  Si los números NO son iguales, mostrar el cartel: “Los números X e Y, NO son iguales”. Donde X e Y, son los números.
+
+num = int(input("Ingrese un numero: "))
+num2 = int(input("Ingrese otro numero: "))
+
+if num == num2:
+	print("ambos numeros son iguales")
+else:
+ 	print("los numeros", num, "y", num2, "no son iguales")
+print("fin del programa")
+
+
+6)Ingresar un número por pantalla y mostrar los días de la semana. Según se muestra en la siguiente tabla:
+
+num = int(input("Ingrese un numero: "))
+
+if num == 0:
+	print("Hoy es domingo")
+if num == 1:
+	print("Hoy es lunes")
+if num == 2:
+	print("Hoy es martes")
+if num == 3:
+	print("Hoy es miercoles")
+if num == 4:
+	print("Hoy es jueves")
+if num == 5:
+	print("Hoy es viernes")
+if num == 6:
+	print("Hoy es sabado")
+elif num > 6:
+	print("No es un numero valido")
+
+
+7)Ingresar una nota por pantalla y mostrar si el alumno APROBÓ o DESAPROBÓ. Se aprueba con calificación 4 (cuatro).
+
+
+print("Notas")
+
+num = int(input("Ingrese la calificacion: "))
+
+if num >= 4:
+	print("El alumno aprobó la materia")
+else:
+ 	print("El alumno desaprobó la materia")
+print("fin del programa")
+
