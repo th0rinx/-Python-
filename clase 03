@@ -1,0 +1,90 @@
+
+1 ) Mostrar los números comprendidos entre el 1 y el 5, utilizando una estructura repetitiva exacta
+
+for count in range(1,6):
+print(count) 
+
+2) Mostrar los números comprendidos entre el 1 y el 1000, donde el incremento sea de 3 (pasos). 
+
+for count in range(1,1003,3): #Ojo Si bien muestra lo mismo el límite solicitado era 1001
+print(count)
+
+3) ingresar un número por pantalla y mostrar los números comprendidos entre el 1 y el número ingresado. 
+Ambos números incluidos. 
+
+num=int(input("Ingrese un numero: "))
+for c in range(1, num+1):
+print(c) 
+
+4) Ingresar dos números por pantalla y mostrar los números comprendidos entre el primero y el segundo 
+número ingresado. Ambos números incluidos. 
+
+a=int(input("Ingrese un numero: "))
+b=int(input("Ingrese un segundo numero: "))
+for c in range(a, b+1):
+ suma = 0 # NO es lo solicitado
+for c in range(1, 11, 1):
+valor = int(input("Ingrese un numero: "))
+suma = suma + valor
+print("La suma de los numeros es de:", suma)
+print(c)
+
+5) Ingresar 10 números por pantalla y mostrar la suma de los números ingresados.
+
+suma = 0
+for c in range(1, 11, 1):
+valor = int(input("Ingrese un numero: "))
+suma = suma + valor
+print("La suma de los numeros es de:", suma) 
+
+
+6) Ingresar 10 números por pantalla y mostrar cuántos de los números que se ingresaron, eran positivos.
+
+cont = 0
+for c in range(1, 11, 1):
+valor = int(input("Ingrese un numero: "))
+if valor > 0:
+cont +=1;
+print("hay", cont, "numeros positivos") 
+
+
+7) Ingresar 15 números por pantalla y mostrar cuántos de los números que se ingresaron, eran positivos, 
+cuántos eran negativos y cuántos eran neutros (los ceros). 
+pos = 0
+nega = 0
+neu = 0
+for c in range(1, 16, 1):
+valor = int(input("Ingrese un numero: "))
+if valor > 0:
+pos +=1
+elif valor < 0:
+nega +=1
+else:
+neu +=1
+print("hay", pos, "numeros positivos")
+print("hay", nega, "numeros negativos")
+print("hay", neu, "numeros neutros") 
+
+8) Ingresar una palabra o letra por pantalla y mostrar la palabra/letra ingresada 10 veces, una vez en cada 
+renglón
+
+var= input("Ingrese un palabra o letra: ")
+for c in range(1, 11, 1):
+ print(var)  
+ 
+ 
+9. Ingresar una palabra o letra por pantalla y mostrar la palabra/letra ingresada 10 veces, en el 
+mismo renglón. 
+
+
+var = input("Ingrese un palabra o letra: ")
+for c in range(1, 11, 1):
+ print(var, end=" ") 
+ 
+10.Ingresar 12 números por pantalla y mostrar cuántos de los números ingresados son IMPARES. 
+impar = 0
+for i in range(1, 13, 1):
+ valor = int(input("Ingrese un número: "))
+ if valor % 2 == 1:
+ impar += 1
+print("De los números ingresados: ", impar, " Son impares") 
